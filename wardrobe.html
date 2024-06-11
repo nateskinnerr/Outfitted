@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardrobe</title>
+    <!-- Favicon -->
+    <link rel="icon" href="/Users/nateskinner/Downloads/favicon_io/favicon.ico" type=>
+    <link rel="shortcut icon" href="/Users/nateskinner/Downloads/favicon_io/favicon.ico" type=>
+
+    <style>
+        /* Grid Styles */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Automatically adjust column width */
+            gap: 10px; /* Gap between grid items */
+            margin: 20px; /* Margin around the grid */
+        }
+
+        .photo-grid-item {
+            position: relative;
+            overflow: hidden;
+            width: 100%; /* Ensure each grid item takes up 100% width */
+            padding-top: 100%; /* Create a square aspect ratio (1:1) for each grid item */
+            text-align: center; /* Center-align the description */
+        }
+
+        .photo-grid-item img {
+            width: 100%; /* Ensure images fill their container */
+            height: 100%; /* Ensure images fill their container */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+            display: block;
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+        .photo-grid-item:hover img {
+    transform: scale(1.1); /* Scale up on hover */
+        }
+
+        .photo-description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: #fff; /* Text color */
+            padding: 5px; /* Padding around the description */
+            font-size: 12px; /* Font size of the description */
+            transition: opacity 0.3s ease; /* Smooth transition for opacity */
+            opacity: 0; /* Initially hidden */
+        }
+        
+         
+        .photo-grid-item:hover .photo-description {
+    opacity: 1; /* Show description on hover */
+        }
+        /* Other Styles */
+        body {
+            background-color: #ffffff; /* Background color */
+            font-family: Arial, sans-serif; /* Font family */
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Tempting', cursive;
+            margin-top: 10px; /* Add some margin top */
+            border-bottom: 1px solid #000000; /* Add border line */
+            padding-bottom: 5px; /* Add space below border */
+        }
+
+
+        h2 {
+            text-align: center;
+            font-size: 16px;
+            
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 600px;
+        }
+
+        /* Link Styles */
+        a {
+            display: block; /* Make links behave like blocks for easier styling */
+            margin: 0 0 40px 40px; /* Adjust margin */
+            text-align: center; /* Align link text to the left */
+        }
+    </style>
+        
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Wardrobe</h1>
+</header>
+<h2>Discover a curated collection of pieces designed to elevate your style effortlessly.</h2>
+
+<!-- Photo Grid -->
+<div class="photo-grid">
+    <!-- Image 1 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/736x/75/cd/f6/75cdf6c9f7124baa571da29b9c807462.jpg" alt="Image 1">
+        <div class="photo-description">Adidas Football Jersey</div>
+    </div>
+    <!-- Image 2 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/564x/2a/aa/8c/2aaa8c5fd6b4dbe54ad4e6888a0f0f9f.jpg" alt="Image 2">
+        <div class="photo-description">Weekday Astro Loose Jeans</div>
+    </div>
+    <!-- Image 3 -->
+    <div class="photo-grid-item">
+        <img src="https://www.sneakerhype.eu/cdn/shop/products/file_b9ed44a0-71cb-484c-a4c8-cfb5136def7a.png?v=1710154067" alt="Image 3">
+        <div class="photo-description">Asics Gel Kanyano</div>
+    </div>
+    <!-- Image 4 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/736x/ff/e9/04/ffe904d512e4686eb5d9040f88dfa2fb.jpg" alt="Image 4">
+        <div class="photo-description">Jaded LDN Jorts</div>
+    </div>
+    <!-- Image 5 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/564x/3e/3f/3f/3e3f3f7c561136270512711aaa3f560d.jpg" alt="Image 5">
+        <div class="photo-description">Thrifted Brown Leather Jacket</div>
+    </div>
+    <!-- Image 6 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/564x/bc/dc/0a/bcdc0a32cc331e926817c1a9093a4735.jpg" alt="Image 6">
+        <div class="photo-description">Shaggy Dog Knit</div>
+    </div>
+    <!-- Image 7 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/564x/29/01/c3/2901c3dd3ccdc0884fcb20070332b1b1.jpg" alt="Image 7">
+        <div class="photo-description">Cartier Watch</div>
+    </div>
+    <!-- Image 8 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/564x/76/eb/29/76eb294067a49c0f20242f25b9873922.jpg" alt="Image 8">
+        <div class="photo-description">Meller Sunglasses</div>
+    </div>
+    <!-- Image 9 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/564x/e2/35/81/e23581ff417ff89af73ab4331218b94e.jpg" alt="Image 9">
+        <div class="photo-description">Vintage Loafers</div>
+    </div>
+    <!-- Image 10 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/736x/1d/62/18/1d62185ed2ca9235f69b7bf96a387231.jpg" alt="Image 10">
+        <div class="photo-description">Silver Drop Earrings</div>
+    </div>
+    <!-- Image 11 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/736x/f2/cd/4e/f2cd4e52628d7e1546bb07ed116795ba.jpg" alt="Image 11">
+        <div class="photo-description">Onitsuka Siver Shoes</div>
+    </div>
+    <!-- Image 12 -->
+    <div class="photo-grid-item">
+        <img src="https://i.pinimg.com/564x/18/b6/0f/18b60f049a49b373861fce34b0b750b2.jpg" alt="Image 12">
+        <div class="photo-description">Loewe Leather Bag</div>
+    </div>
+    
+</div>
+
+<a href="index.html">Return to home.</a>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Outfitted. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
