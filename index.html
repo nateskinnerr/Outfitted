@@ -3,43 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thrifting Delight</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Outfitted</title>
+    <!-- Favicon -->
+    <link rel="icon" href="/Users/nateskinner/Downloads/favicon_io/favicon.ico" type=>
+    <link rel="shortcut icon" href="/Users/nateskinner/Downloads/favicon_io/favicon.ico" type=>
+
+    <style>
+        /* Header Styles */
+        header {
+            background-image: url('https://img.freepik.com/free-photo/blue-denim-texture-background_87358-114.jpg'); /* Add your image path here */
+            background-size: cover;
+            background-position: center;
+            color: #ffffff; /* Change text color to ensure visibility */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+            font-family: 'Tempting', cursive;
+        }
+
+        /* Font for all text except header */
+body, nav, .main-content, footer {
+    font-family: Helvetica, Arial, sans-serif; /* Set Helvetica as the font */
+}
+
+
+        /* Navigation Styles */
+        nav {
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #000000;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        nav ul li {
+            display: inline-block; /* Change display property */
+            position: relative; /* Add position relative */
+            margin-right: 20px; /* Add margin between items */
+        }
+
+        nav ul li:last-child {
+            margin-right: 0; /* Remove margin for the last item */
+        }
+
+        nav ul li a {
+            color: #000000; /* Default color */
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth transition */
+        }
+
+        nav ul li:hover a {
+            color: #04306a; /* Change color on hover */
+        }
+
+        nav ul li::before {
+            content: ''; /* Add content */
+            position: absolute; /* Position it absolutely */
+            bottom: -2px; /* Adjust position */
+            left: 0; /* Adjust position */
+            width: 100%; /* Full width */
+            height: 2px; /* Height of the box */
+            background-color: transparent; /* Default color */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        nav ul li:hover::before {
+            background-color: #04306a; /* Change color on hover */
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image-container {
+            text-align: center; /* Center the image */
+        }
+
+        .image-container img {
+             position: relative;
+             width: 10%;
+             margin: 0 auto;
+        }
+
+        .image-container img {
+            width: 30%;
+            height: auto;
+            display: none;
+        }
+        #img1:checked ~ .images #image1,
+        #img2:checked ~ .images #image2,
+        #img3:checked ~ .images #image3,
+        #img4:checked ~ .images #image4 {
+            display: block;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .controls label {
+            cursor: pointer;
+            padding: 5px 10px;
+            margin: 0 5px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 3px;
+        }
+
+
+        /* Footer Styles */
+        footer {
+            background-image: url('https://img.freepik.com/free-photo/blue-denim-texture-background_87358-114.jpg'); /* Add your background image path here */
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="hero">
-            <h1>Welcome to Thrifting Delight</h1>
-            <p>Your ultimate guide to finding treasures in thrift stores.</p>
-        </section>
 
-        <section class="content">
-            <h2>Why Thrift?</h2>
-            <p>Thrifting is not just about saving money, it's about discovering unique items and giving them a second life. It's an adventure that supports sustainability and creativity.</p>
+<!-- Header -->
+<header>
+    <h1>Outfitted</h1>
+</header>
 
-            <h2>Top Thrifting Tips</h2>
-            <ul>
-                <li>Visit thrift stores frequently as inventory changes often.</li>
-                <li>Keep an open mind and be patient.</li>
-                <li>Check for quality and condition of items.</li>
-                <li>Look for labels and brand names.</li>
-                <li>Don't be afraid to haggle if it's appropriate.</li>
-            </ul>
-        </section>
-    </main>
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <a href="wardrobe.html">WARDROBE</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
 
-    <footer>
-        <p>&copy; 2024 Thrifting Delight</p>
-    </footer>
+<!-- Main Content -->
+<div class="main-content">
+    <h2>what's trending?</h2>
+    <div class="image-container">
+        <input type="radio" name="image" id="img1" checked>
+        <input type="radio" name="image" id="img2">
+        <input type="radio" name="image" id="img3">
+        <input type="radio" name="image" id="img4">
+        <div class="images">
+            <img id="image1" src="https://i.pinimg.com/736x/83/26/52/8326529c3dba359f369becc6c5563cd1.jpg" alt="Fashion Image 1">
+            <img id="image2" src="https://i.pinimg.com/736x/81/9c/64/819c6434723be682a93fe2f64f2de39f.jpg" alt="Fashion Image 2">
+            <img id="image3" src="https://i.pinimg.com/564x/6c/c7/c1/6cc7c1a880eff9dc7f0ba207d7eed0eb.jpg" alt="Fashion Image 3">
+            <img id="image4" src="https://i.pinimg.com/564x/a0/64/68/a06468e76604d0d762c9983f9df4930f.jpg" alt="Fashion Image 4">
+        </div>
+        <div class="controls">
+            <label for="img1">1</label>
+            <label for="img2">2</label>
+            <label for="img3">3</label>
+            <label for="img4">4</label>
+        </div>
+    </div>
+    <p>"Unveiling the Hottest Fashion Trends: Stay Ahead of the Curve with My Exclusive Insights!".</p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Outfitted. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
+
