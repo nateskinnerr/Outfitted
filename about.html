@@ -3,81 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Fashion Blog</title>
+    <title>About Us - Outfitted</title>
     <style>
         body {
             font-family: Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-image: url('https://st2.depositphotos.com/1003553/11774/i/450/depositphotos_117740858-Denim-jeans-texture-or-denim-jeans-background-with-seam-of-fashi.jpg');
+            background-size: cover;
         }
 
         header {
-            background-color: #04306a;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Tempting',cursive;
             padding: 20px;
             text-align: center;
+            margin-top: 0px;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 5px;
         }
 
-        nav {
-            background-color: #04306a;
-            color: #ffffff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li:last-child {
-            margin-right: 0;
-        }
-
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .container {
+       .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
-        h1 {
-            color: #04306a;
+        h1, h2 {
+            color: #000000;
             text-align: center;
         }
 
         p {
-            text-align: justify;
+            color: #333333;
         }
 
-.return-home {
-    text-align: center;
-    margin-top: 20px;
-}
+       .return-home {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-.return-home a {
-    color: #04306a;
-    text-decoration: none;
-}
+       .return-home a {
+            color: #000000;
+            text-decoration: none;
+        }
 
-.return-home a:hover {
-    text-decoration: underline;
-}
-
+       .return-home a:hover {
+            text-decoration: underline;
+        }
 
         footer {
             background-color: #ffffff;
-            color: #ffffff;
+            color: #000000;
             padding: 20px;
             text-align: center;
             position: absolute;
@@ -85,29 +67,41 @@
             width: 100%;
         }
 
-        
+       .image-container {
+            position: absolute;
+            bottom: -150px;
+            right: 20px;
+        }
+
+       .image-container img {
+            width: 150px;
+            height: 200px;
+            border-radius: 0%;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>About Our Fashion Blog</h1>
+    <h1>About Us</h1>
 </header>
 
-
 <div class="container">
-    <h2>Our Story</h2>
-    <p>Welcome to our fashion blog! We are passionate about fashion and everything related to it. Our journey started with a simple idea: to create a space where we can share our love for fashion, offer style inspiration, and connect with fellow fashion enthusiasts.</p>
-    
-    <h2>Our Mission</h2>
-    <p>Our mission is to provide our readers with valuable insights into the world of fashion. Whether it's the latest trends, styling tips, or fashion industry news, we strive to deliver engaging content that inspires and empowers our audience to express themselves through their personal style.</p>
+    <h2>Welcome to Outfitted</h2>
+    <p>Welcome to our fashion blog! I'm Nate Skinner, a passionate fashion enthusiast with a keen eye for style and trends. I love exploring the dynamic world of fashion, from runway shows to street style. Through this blog, I aim to share my insights, inspirations, and the latest trends to help you elevate your wardrobe and express your unique style. Join me on this fashionable journey, and let's make every day a stylish one!.</p>
+    <p></p>
 
-    <h2>Meet the Team</h2>
-    <p>Our team consists of dedicated fashion enthusiasts, writers, photographers, and stylists who are committed to bringing you the best of fashion content. Together, we work tirelessly to curate engaging and informative posts that cater to diverse tastes and interests within the fashion community.</p>
+    <div class="image-container">
+        <img src="https://i.pinimg.com/736x/ec/1d/d5/ec1dd5ea07b4b9d7c7b4c2e15a6466f9.jpg" alt="Outfitted Logo">
+    </div>
+
+    <div class="return-home">
+        <a href="index.html">Return to Home</a>
+    </div>
 </div>
 
 <footer>
-    <p>&copy; 2024 Fashion Blog. All rights reserved.</p>
+    <p>&copy; 2024 Outfitted. All rights reserved.</p>
 </footer>
 
 </body>
