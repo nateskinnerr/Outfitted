@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outfitted</title>
     <!-- Favicon -->
-    <link rel="icon" href="/Users/nateskinner/Downloads/favicon_io/favicon.ico" type=>
-    <link rel="shortcut icon" href="/Users/nateskinner/Downloads/favicon_io/favicon.ico" type=>
+    <link rel="icon" href="/Users/nateskinner/Downloads/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/Users/nateskinner/Downloads/favicon_io/favicon.ico" type="image/x-icon">
 
     <style>
         /* Header Styles */
         header {
-            background-image: url('https://img.freepik.com/free-photo/blue-denim-texture-background_87358-114.jpg'); /* Add your image path here */
+            background-image: url('https://img.freepik.com/free-photo/blue-denim-texture-background_87358-114.jpg');
             background-size: cover;
             background-position: center;
-            color: #ffffff; /* Change text color to ensure visibility */
+            color: #ffffff;
             padding: 20px;
             text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
         header h1 {
@@ -26,10 +27,9 @@
         }
 
         /* Font for all text except header */
-body, nav, .main-content, footer {
-    font-family: Helvetica, Arial, sans-serif; /* Set Helvetica as the font */
-}
-
+        body, nav, .main-content, footer {
+            font-family: Helvetica, Arial, sans-serif;
+        }
 
         /* Navigation Styles */
         nav {
@@ -51,38 +51,38 @@ body, nav, .main-content, footer {
         }
 
         nav ul li {
-            display: inline-block; /* Change display property */
-            position: relative; /* Add position relative */
-            margin-right: 20px; /* Add margin between items */
+            display: inline-block;
+            position: relative;
+            margin-right: 20px;
         }
 
         nav ul li:last-child {
-            margin-right: 0; /* Remove margin for the last item */
+            margin-right: 0;
         }
 
         nav ul li a {
-            color: #000000; /* Default color */
+            color: #000000;
             text-decoration: none;
-            transition: color 0.3s ease; /* Smooth transition */
+            transition: color 0.3s ease;
         }
 
         nav ul li:hover a {
-            color: #04306a; /* Change color on hover */
+            color: #04306a;
         }
 
         nav ul li::before {
-            content: ''; /* Add content */
-            position: absolute; /* Position it absolutely */
-            bottom: -2px; /* Adjust position */
-            left: 0; /* Adjust position */
-            width: 100%; /* Full width */
-            height: 2px; /* Height of the box */
-            background-color: transparent; /* Default color */
-            transition: background-color 0.3s ease; /* Smooth transition */
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
         }
 
         nav ul li:hover::before {
-            background-color: #04306a; /* Change color on hover */
+            background-color: #04306a;
         }
 
         /* Main Content Styles */
@@ -92,13 +92,13 @@ body, nav, .main-content, footer {
         }
 
         .image-container {
-            text-align: center; /* Center the image */
+            text-align: center;
         }
 
         .image-container img {
-             position: relative;
-             width: 10%;
-             margin: 0 auto;
+            position: center;
+            width: 10%;
+            margin: 0 auto;
         }
 
         .image-container img {
@@ -128,18 +128,17 @@ body, nav, .main-content, footer {
             border-radius: 3px;
         }
 
-
         /* Footer Styles */
         footer {
-            background-image: url('https://img.freepik.com/free-photo/blue-denim-texture-background_87358-114.jpg'); /* Add your background image path here */
+            background-image: url('https://img.freepik.com/free-photo/blue-denim-texture-background_87358-114.jpg');
             background-size: cover;
             background-position: center;
             color: #ffffff;
             padding: 20px;
             text-align: center;
             position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
-
     </style>
 </head>
 <body>
@@ -153,7 +152,7 @@ body, nav, .main-content, footer {
 <nav>
     <ul>
         <li><a href="#">HOME</a></li>
-        <a href="wardrobe.html">WARDROBE</a></li>
+        <li><a href="wardrobe.html">WARDROBE</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="contact.html">CONTACT</a></li>
     </ul>
@@ -161,7 +160,7 @@ body, nav, .main-content, footer {
 
 <!-- Main Content -->
 <div class="main-content">
-    <h2>what's trending?</h2>
+    <h2>What's trending?</h2>
     <div class="image-container">
         <input type="radio" name="image" id="img1" checked>
         <input type="radio" name="image" id="img2">
@@ -180,7 +179,7 @@ body, nav, .main-content, footer {
             <label for="img4">4</label>
         </div>
     </div>
-    <p>"Unveiling the Hottest Fashion Trends: Stay Ahead of the Curve with My Exclusive Insights!".</p>
+    <p>"Unveiling the Hottest Fashion Trends: Stay Ahead of the Curve with My Exclusive Insights!"</p>
 </div>
 
 <!-- Footer -->
